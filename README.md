@@ -11,6 +11,12 @@ Required Minimum Shopware Version 5.3
 # Add firebase credentials
 * Create new application on https://console.firebase.google.com/ and put js setup code in the plugin configuration
 * set public permission rule for the Database https://firebase.google.com/docs/database/security/quickstart
+  * Enter your firebase project, click on the Database (develop section on the left, realtime database) and select the Rules tab.
+  Permissions should be public, so set it up like: `{  "rules": {
+      ".read": true,
+      ".write": true
+      }
+   }`
 
 # Currently supported backend sections
 
