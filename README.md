@@ -1,6 +1,6 @@
 # Backend Notification when multiple users working parallel
 
-Required Minimum Shopware Version 5.3
+Required Minimum Shopware Version 5.2
 
 # Installation
 
