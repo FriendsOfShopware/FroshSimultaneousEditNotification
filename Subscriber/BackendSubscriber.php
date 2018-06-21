@@ -7,7 +7,6 @@ use Enlight_Event_EventArgs;
 
 /**
  * Class BackendSubscriber
- * @package FroshSimultaneousEditNotification\Subscriber
  */
 class BackendSubscriber implements SubscriberInterface
 {
@@ -18,6 +17,7 @@ class BackendSubscriber implements SubscriberInterface
 
     /**
      * BackendSubscriber constructor.
+     *
      * @param string $viewDir
      */
     public function __construct($viewDir)
@@ -27,12 +27,13 @@ class BackendSubscriber implements SubscriberInterface
 
     /**
      * {@inheritdoc}
+     *
      * @return array
      */
     public static function getSubscribedEvents()
     {
         return [
-            'Enlight_Controller_Action_PostDispatch_Backend_Index' => 'onBackendIndex'
+            'Enlight_Controller_Action_PostDispatch_Backend_Index' => 'onBackendIndex',
         ];
     }
 

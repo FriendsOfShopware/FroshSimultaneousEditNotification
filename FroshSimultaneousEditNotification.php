@@ -2,7 +2,6 @@
 
 namespace FroshSimultaneousEditNotification;
 
-
 use Shopware\Components\Plugin;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
