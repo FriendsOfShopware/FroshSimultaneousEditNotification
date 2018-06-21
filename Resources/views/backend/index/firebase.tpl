@@ -93,6 +93,30 @@ function getWindowDetails(window) {
             };
 
             break;
+
+        case 'Shopware.apps.Emotion.view.detail.Window':
+            if (!window.emotion || !window.emotion.get('id')) {
+                return false;
+            }
+
+            // It seems to be, that emotion view's will be later deleted
+            if (typeof window.hasFixEvent === 'undefined') {
+                window.on('close', function () {
+                    delete window.emotion;
+                });
+                window.hasFixEvent = true;
+            }
+
+            data = {
+                id: 'emotion_' + window.emotion.get('id'),
+                recordId: window.emotion.get('id'),
+                type: 'emotion',
+                user: userName,
+                time: new Date(),
+                view: window.down("[alias='widget.emotion-detail-settings']")
+            };
+
+            break;
     }
 
     return data;

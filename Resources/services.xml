@@ -5,13 +5,13 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
-        <parameter key="shyim_backend_notification.view_dir">%shyim_backend_notification.plugin_dir%/Resources/views</parameter>
+        <parameter key="frosh_simultaneous_edit_notification.view_dir">%frosh_simultaneous_edit_notification.plugin_dir%/Resources/views</parameter>
     </parameters>
 
     <services>
-        <service id="shyim_backend_notification.subscribers.backend" class="ShyimBackendNotification\Subscriber\BackendSubscriber">
+        <service id="frosh_simultaneous_edit_notification.subscribers.backend" class="FroshSimultaneousEditNotification\Subscriber\BackendSubscriber">
             <tag name="shopware.event_subscriber"/>
-            <argument type="string">%shyim_backend_notification.view_dir%</argument>
+            <argument type="string">%frosh_simultaneous_edit_notification.view_dir%</argument>
         </service>
     </services>
 </container>

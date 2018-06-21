@@ -5,7 +5,7 @@ Required Minimum Shopware Version 5.2
 # Installation
 
 ## Git Version
-* Checkout Plugin in `/custom/plugins/ShyimBackendNotification`
+* Checkout Plugin in `/custom/plugins/FroshSimultaneousEditNotification`
 * Install the Plugin with the Plugin Manager
 
 # Add firebase credentials

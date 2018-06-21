@@ -1,13 +1,13 @@
 <?php
 
-namespace ShyimBackendNotification\Subscriber;
+namespace FroshSimultaneousEditNotification\Subscriber;
 
 use Enlight\Event\SubscriberInterface;
 use Enlight_Event_EventArgs;
 
 /**
  * Class BackendSubscriber
- * @package ShyimBackendNotification\Subscriber
+ * @package FroshSimultaneousEditNotification\Subscriber
  */
 class BackendSubscriber implements SubscriberInterface
 {
