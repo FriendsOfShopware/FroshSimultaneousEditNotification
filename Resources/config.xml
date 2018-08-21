@@ -5,7 +5,7 @@
         <element type="textarea">
             <name>firebaseConfiguration</name>
             <label>Firebase Setup Code</label>
-            <value><![CDATA[<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.min.js"></script>
+            <value><![CDATA[<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
 <script>
   // Initialize Firebase
   var config = {
