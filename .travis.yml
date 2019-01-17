@@ -12,7 +12,7 @@ env:
   matrix:
     - SHOPWARE_VERSION="5.5"
   global:
-    - PLUGIN_NAME=FroshIonCubeChecker
+    - PLUGIN_NAME=FroshSimultaneousEditNotification
 
 script:
   -
