@@ -1,0 +1,34 @@
+<p>
+    Das Plugin zeigt im Backend bei Bestellungen, Kunden, Artikeln und Einkaufswelten an, ob gerade mehrere User das selbe Element bearbeiten.
+    <strong>Für das Plugin wird ein Google Firebase Projekt benötigt</strong>
+</p>
+
+<p>
+    <h4>Firebase Anleitung</h4>
+
+    <ul>
+        <li>Erstelle unter https://console.firebase.google.com/ eine neue Anwendung und kopiere das Javascript Setup Script in die Plugin Konfiguration</li>
+        <li>Setze die Berechtigungen für die Realtime Datenbank https://firebase.google.com/docs/database/security/quickstart</li>
+        <li>Gehe dazu auf dein Firebase Projekt (Links in der Sidebar) auf Database</li>
+        <li>Erstelle hier eine Datenbank in test-mode</li>
+    </ul>
+
+    <p>Die Datenbank Rechte sollten folgender maßen sein
+        <pre>{  "rules": {
+      ".read": true,
+      ".write": true
+      }
+    }
+    </pre>
+</p>
+
+
+<p>
+    <a href="https://github.com/FriendsOfShopware/FroshSimultaneousEditNotification" target="_blank" style="display: inline-block;"><img src="https://img.shields.io/badge/Github-FroshSimultaneousEditNotification-green.svg"></a><br>
+    Dieses Plugin wird von <a href="https://store.shopware.com/friends-of-shopware.html" target="_blank">@FriendsOfShopware</a> entwickelt.
+    Maintainer dieses Plugins ist: <a href="https://github.com/shyim" target="_blank">Soner Sayakci</a>
+</p>
+
+<p>
+    Bei Fragen / Fehlern bitte ein <a href="https://github.com/FriendsOfShopware/FroshSimultaneousEditNotification/issues/new" target="_blank">Github Issue</a> erstellen
+</p>

@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="../../../engine/Shopware/Components/Plugin/schema/plugin.xsd">
-    <label lang="de">FroshSimultaneousEditNotification</label>
-    <label lang="en">FroshSimultaneousEditNotification</label>
+    <label lang="de">Benachrichtigung bei mehreren Backend-Benutzern</label>
+    <label lang="en">Notification on multiple backend users</label>
     <version>1.0.0</version>
     <copyright>Friends of Shopware</copyright>
     <license>MIT</license>
     <link>https://friendsofshopware.github.io/</link>
     <author>Friends of Shopware</author>
-    <compatibility minVersion="5..0"/>
+    <compatibility minVersion="5.4.0"/>
+
+    <changelog version="1.0.0">
+        <changes lang="en">First release in Store</changes>
+        <changes lang="de">Erster Release im Store</changes>
+    </changelog>
+
+    <description lang="en">Shows in Backend a notification when multiple user edits the same entity</description>
+    <description lang="de">Zeigt im Backend Benachrichtigungen wenn mehrere User die selbe Sache bearbeiten</description>
 </plugin>
