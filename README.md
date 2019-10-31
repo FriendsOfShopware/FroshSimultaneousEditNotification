@@ -19,14 +19,24 @@ Backend Notification when multiple users working parallel
 
 # Add firebase credentials
 
+* If you setup Google Cloud Platform the first time, make shure to select the right location like europe-west3 https://firebase.google.com/docs/projects/locations because you can not change it later on!
 * Create new application on https://console.firebase.google.com/ and put js setup code in the plugin configuration
+    * Add firebase-database.js (line 3) like `<script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-database.js"></script>` after the firebase js code `<script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>`
+    * Take Care of the Version /7.2.2/
+    * It should look like: `<!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-database.js"></script>`
+
 * set public permission rule for the Database https://firebase.google.com/docs/database/security/quickstart
   * Enter your firebase project, click on the Database (develop section on the left, realtime database) and select the Rules tab.
-  Permissions should be public, so set it up like: `{  "rules": {
-      ".read": true,
-      ".write": true
-      }
-   }`
+  Permissions should be public, so set it up like: `rules_version = '2';
+    service cloud.firestore {
+    match /databases/{database}/documents {
+    match /{document=**} {
+            allow read, write;
+            }
+        }
+    }`
 
 # Currently supported backend sections
 
